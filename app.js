@@ -1,5 +1,5 @@
 let superheroes = [
-  {name: "Batman" , phone_number: "1234132467" , affiliation: "DC Comics", image_url: "http://www.drodd.com/images13/batman28.jpgs" },
+  {name: "Batman" , phone_number: "1234132467" , affiliation: "DC Comics", image_url: "http://cartoonbros.com/wp-content/uploads/2016/05/Batman-12.jpg" },
   {name: "Superman", phone_number: "1234161763", affiliation: "DC Comics", image_url: "https://s-media-cache-ak0.pinimg.com/736x/60/b5/ed/60b5edc198b4862dbb5d430ef3f9ea07.jpg"},
   {name: "Green Arrow", phone_number: "1234175089", affiliation: "DC Comics", image_url: "http://www.mezcotoyz.com/mas_assets/cache/image/a/0/a/2570.Jpg" },
   {name: "Wonder Woman", phone_number: "6754832099", affiliation: "DC Comics", image_url: "https://s-media-cache-ak0.pinimg.com/originals/a2/ea/0a/a2ea0afbdc4c1d218c7dfdda9b78ba90.jpg"},
@@ -17,6 +17,5 @@ angular
 
 function hotlineController () {
     this.superheroes = superheroes
-
 
 }
