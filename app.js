@@ -7,6 +7,7 @@ let superheroes = [
   {name: "Wolverine", phone_number: "6902342933", affiliation: "Marvel", image_url: },
   {name: "Iron Man", phone_number: "5674238903", affiliation: "Marvel", image_url: },
   {name: "Spider-Man", phone_number: "2389579833", affiliation: "Marvel", image_url: },
+  {name: "Hawkeye", phone_number: "1298531023", affiliation: "Marvel", image_url: },
 
 ]
 
