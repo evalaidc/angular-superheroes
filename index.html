@@ -1,12 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="superHotlineApp">
 <head>
   <meta charset="UTF-8">
   <title>Superhero Phone Book</title>
   <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
 </head>
-<body>
+  <body ng-controller="hotlineCtrl as vm">
+      <div ng-repeat="superhero in vm.superheroes">
+          <p> {{$index + 1}}. {{superhero.name}} </p>
 
+      </div>
   <script src="app.js"></script>
 </body>
 </html>
