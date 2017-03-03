@@ -8,9 +8,9 @@
 </head>
   <body ng-controller="hotlineCtrl as vm">
     <input type="text" ng-model="search" class="inputText" placeholder="Search Superheroes">
-    <input type="text" ng-model="maxlimit" class="inputText" placeholder="Limit Superheroes">
+    <input type="number" ng-model="maxlimit" class="inputText" placeholder="Limit Superheroes">
 
-        <div ng-repeat="superhero in vm.superheroes | filter: search | limitTo:maxlimit">
+        <div ng-repeat="superhero in vm.superheroes | filter: search | limitTo:maxlimit"  ng-class="{'marvel': superhero.affiliation == 'Marvel', 'dc': superhero.affiliation == 'DC Comics'}">
             <h2>{{superhero.name}} </h2>
             <p> Comic: {{superhero.affiliation}}</p>
             <p> Number: {{superhero.phone_number}}</p>
