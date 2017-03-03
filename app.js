@@ -17,5 +17,9 @@ angular
 
 function hotlineController () {
     this.superheroes = superheroes
+    this.addSuperhero = function(){
+      let superhero = {name: this.newSuperheroName, phone_number: this.newSuperheroNumber, affiliation: this.newSuperheroAffil, image_url: this.newSuperheroPhoto}
+      this.superheroes.push(superhero)
+    }
 
 }
