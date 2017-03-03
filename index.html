@@ -10,8 +10,8 @@
     <h1> Superhero Hotline </h1>
     <input type="text" ng-model="search" class="inputText" placeholder="Search Superheroes">
     <input type="number" ng-model="maxlimit" class="inputText" placeholder="Limit Superheroes">
-
-        <div ng-repeat="superhero in vm.superheroes | filter: search | limitTo:maxlimit"  ng-class="{'marvel': superhero.affiliation == 'Marvel', 'dc': superhero.affiliation == 'DC Comics'}">
+      <div class='superherolist'>
+        <div class="superheroes" ng-repeat="superhero in vm.superheroes | filter: search | limitTo:maxlimit"  ng-class="{'marvel': superhero.affiliation == 'Marvel', 'dc': superhero.affiliation == 'DC Comics'}">
             <h2>{{superhero.name}} </h2>
             <p> Comic: {{superhero.affiliation}}</p>
             <p> Number: {{superhero.phone_number}}</p>
@@ -31,8 +31,9 @@
               <button class='btn' type='submit'> Save</button>
             </form>
         </div>
+      </div>
 
-        <div>
+        <div class='create'>
           <h3> Create A New Superhero </h3>
           <input type='text' ng-model="vm.newSuperheroName" placeholder="Name">
           <input type='text' ng-model='vm.newSuperheroAffil' placeholder="Comic Affiliation">

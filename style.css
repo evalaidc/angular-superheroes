@@ -12,5 +12,15 @@ img {
   color: white;
 }
 
-body {
+.superherolist {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: space-around;
+}
+
+.superheroes {
+  width: 200px;
+  height: auto;
+  margin: 10px;
 }
