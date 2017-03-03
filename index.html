@@ -14,8 +14,8 @@
             <h2>{{superhero.name}} </h2>
             <p> Comic: {{superhero.affiliation}}</p>
             <p> Number: {{superhero.phone_number}}</p>
-            <p> <img src={{superhero.image_url}}> </p>
-
+            <button ng-click="showimage = !showimage"> Show/Hide Image</button>
+            <p ng-show="showimage"> <img src={{superhero.image_url}}> </p>
         </div>
 
   <script src="app.js"></script>
