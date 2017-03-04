@@ -20,7 +20,24 @@ img {
 }
 
 .superheroes {
-  width: 200px;
+  width: auto;
   height: auto;
   margin: 10px;
+  padding: 0px 10px;
+}
+
+body {
+  font-family: 'Diplomata SC', cursive, sans-serif;
+  background-image: url("https://s-media-cache-ak0.pinimg.com/originals/50/c0/41/50c04115762900fead70d1064cbed5ef.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.headline, .create {
+  text-align: center;
+  color: rgb(0,171,197);
+  text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
+}
+h2 {
+  font-size: 20px;
 }
